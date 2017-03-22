@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="378.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="calculatorfx.FXMLDocumentController">
+    <children>
+      <GridPane layoutX="6.0" layoutY="98.0" prefHeight="173.0" prefWidth="382.0" AnchorPane.bottomAnchor="35.0" AnchorPane.topAnchor="98.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="97.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="96.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="94.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="upodiastoli" mnemonicParsing="false" onMouseClicked="#handleUpodiastoliButtonAction" prefHeight="50.0" prefWidth="95.0" text="." GridPane.rowIndex="3" />
+            <Button fx:id="jButton0" mnemonicParsing="false" onMouseClicked="#handleJButton0Action" prefHeight="50.0" prefWidth="95.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="arnitiko" mnemonicParsing="false" onMouseClicked="#handleArnitikoButtonAction" prefHeight="50.0" prefWidth="95.0" text="(-)" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="add" mnemonicParsing="false" onMouseClicked="#handleAddButtonAction" prefHeight="50.0" prefWidth="95.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="jButton1" mnemonicParsing="false" onMouseClicked="#handleJButton1Action" prefHeight="50.0" prefWidth="95.0" text="1" GridPane.rowIndex="2" />
+            <Button fx:id="jButton2" mnemonicParsing="false" onMouseClicked="#handleJButton2Action" prefHeight="50.0" prefWidth="95.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="jButton3" mnemonicParsing="false" onMouseClicked="#handleJButton3Action" prefHeight="50.0" prefWidth="95.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="abstraction" mnemonicParsing="false" onMouseClicked="#handleAbstractionButtonAction" prefHeight="50.0" prefWidth="95.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="jButton4" mnemonicParsing="false" onMouseClicked="#handleJButton4Action" prefHeight="50.0" prefWidth="95.0" text="4" GridPane.rowIndex="1" />
+            <Button fx:id="jButton5" mnemonicParsing="false" onMouseClicked="#handleJButton5Action" prefHeight="50.0" prefWidth="95.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="jButton6" mnemonicParsing="false" onMouseClicked="#handleJButton6Action" prefHeight="50.0" prefWidth="95.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="multiply" mnemonicParsing="false" onMouseClicked="#handleMultiplyButtonAction" prefHeight="50.0" prefWidth="95.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="jButton7" mnemonicParsing="false" onMouseClicked="#handleJButton7Action" prefHeight="42.0" prefWidth="98.0" text="7" />
+            <Button fx:id="jButton8" mnemonicParsing="false" onMouseClicked="#handleJButton8Action" prefHeight="50.0" prefWidth="95.0" text="8" GridPane.columnIndex="1" />
+            <Button fx:id="jButton9" mnemonicParsing="false" onMouseClicked="#handleJButton9Action" prefHeight="50.0" prefWidth="95.0" text="9" GridPane.columnIndex="2" />
+            <Button fx:id="divide" mnemonicParsing="false" onMouseClicked="#handleDivideButtonAction" prefHeight="50.0" prefWidth="95.0" text="/" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="6.0" layoutY="272.0" prefHeight="31.0" prefWidth="382.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.0" minWidth="10.0" prefWidth="233.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="154.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="equals" mnemonicParsing="false" onMouseClicked="#handleEqualsButtonAction" prefHeight="32.0" prefWidth="236.0" text="=" />
+            <Button fx:id="clear" mnemonicParsing="false" onMouseClicked="#handleClearButtonAction" prefHeight="31.0" prefWidth="148.0" text="Clear" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <TextField fx:id="calculationScreen" alignment="CENTER_RIGHT" editable="false" prefHeight="94.0" prefWidth="388.0">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
